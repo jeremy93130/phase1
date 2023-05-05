@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/formulaire.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <form action="" method="get">
+          <div>
+            <div>
+              <label for="pseudo">Pseudonyme :</label>
+              <input type="text" name="name" id="name" /><br />
+            </div>
+            <div>
+              <label for="password">Mot de passe*</label>
+              <input type="text" name="password" id="password" /><br />
+            </div>
+            <div>
+              <label for="email" name="email" id="email">E-mail</label>
+              <input type="email" name="email" id="email" /><br />
+            </div>
+            <div>
+              <label for="photo" name="photo" id="photo"> Photo </label>
+              <input type="button" value="Choisir un fichier" />
+            </div>
+          </div>
+        </form>
+        <section>
+          <fieldset>
+            <legend>Choix Multiples</legend>
+            <div>
+              <label for="destination"
+                >Quelle déstination choisissez-vous?</label
+              >
+              <input type="checkbox" name="pays" id="pays" />
+              <label for="pays" name="pays" id="pays">Italie</label>
+              <input type="checkbox" name="pays" id="pays" />
+              <label for="pays" name="pays" id="pays">Espagne</label>
+              <input type="checkbox" name="pays" id="pays" />
+              <label for="pays" name="pays" id="pays">Tunisie</label>
+            </div>
+            <div>
+              <label for="accompagnateurs"
+                >Qui seront vos accompagnateurs</label
+              >
+              <input type="radio" name="accompagnants" id="accompagnants" />
+              <label for="accompagnants">En famille</label>
+              <input type="radio" name="accompagnants" id="accompagnants" />
+              <label for="accompagnants">Entre amis</label>
+              <input type="radio" name="accompagnants" id="accompagnants" />
+              <label for="accompagnants">Solo</label>
+            </div>
+          </fieldset>
+        </section>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
