@@ -12,52 +12,72 @@
     <main>
       <section>
         <form action="" method="get">
-          <div>
-            <div>
-              <label for="pseudo">Pseudonyme :</label>
-              <input type="text" name="name" id="name" /><br />
-            </div>
-            <div>
-              <label for="password">Mot de passe*</label>
-              <input type="text" name="password" id="password" /><br />
-            </div>
-            <div>
-              <label for="email" name="email" id="email">E-mail</label>
-              <input type="email" name="email" id="email" /><br />
-            </div>
-            <div>
-              <label for="photo" name="photo" id="photo"> Photo </label>
-              <input type="button" value="Choisir un fichier" />
-            </div>
-          </div>
+          <label for="pseudo">Pseudonyme :</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Entrez votre Pseudo"
+          /><br />
+          <label for="password">Mot de passe*</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Tapez votre mot de passe"
+          /><br />
+          <label for="email" name="email" id="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Entrez votre E-mail"
+          /><br />
+          <label for="photo" name="photo" id="photo"> Photo </label>
+          <input type="file" value="Choisir un fichier" />
         </form>
-        <section>
-          <fieldset>
-            <legend>Choix Multiples</legend>
-            <div>
-              <label for="destination"
-                >Quelle déstination choisissez-vous?</label
-              >
-              <input type="checkbox" name="pays" id="pays" />
-              <label for="pays" name="pays" id="pays">Italie</label>
-              <input type="checkbox" name="pays" id="pays" />
-              <label for="pays" name="pays" id="pays">Espagne</label>
-              <input type="checkbox" name="pays" id="pays" />
-              <label for="pays" name="pays" id="pays">Tunisie</label>
-            </div>
-            <div>
-              <label for="accompagnateurs"
-                >Qui seront vos accompagnateurs</label
-              >
-              <input type="radio" name="accompagnants" id="accompagnants" />
-              <label for="accompagnants">En famille</label>
-              <input type="radio" name="accompagnants" id="accompagnants" />
-              <label for="accompagnants">Entre amis</label>
-              <input type="radio" name="accompagnants" id="accompagnants" />
-              <label for="accompagnants">Solo</label>
-            </div>
-          </fieldset>
-        </section>
+        <fieldset>
+          <legend>Choix Multiples</legend>
+          <div>
+            <label for="destination">Quelle déstination choisissez-vous?</label>
+            <input type="checkbox" name="pays" id="pays" />
+            <label for="pays" name="pays" id="pays" class="noback"
+              >Italie</label
+            >
+            <input type="checkbox" name="pays" id="pays" />
+            <label for="pays" name="pays" id="pays" class="noback"
+              >Espagne</label
+            >
+            <input type="checkbox" name="pays" id="pays" />
+            <label for="pays" name="pays" id="pays" class="noback"
+              >Tunisie</label
+            >
+          </div>
+          <div>
+            <label for="accompagnateurs">Qui seront vos accompagnateurs</label>
+            <input type="radio" name="accompagnants" id="accompagnants" />
+            <label for="accompagnants" class="noback">En famille</label>
+            <input type="radio" name="accompagnants" id="accompagnants" />
+            <label for="accompagnants" class="noback">Entre amis</label>
+            <input type="radio" name="accompagnants" id="accompagnants" />
+            <label for="accompagnants" class="noback">Solo</label>
+          </div>
+        </fieldset>
+        <div class="comment">
+          <label for="commentaire">commentaire</label>
+          <textarea
+            name="commentaire"
+            id="commentaire"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </section>
+      <section id="envoie">
+        <div>
+          <button type="button">Envoyer</button>
+          <button type="button">Annuler</button>
+        </div>
       </section>
     </main>
     <footer></footer>

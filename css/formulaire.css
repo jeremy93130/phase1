@@ -1,6 +1,32 @@
 div {
-    padding: 15px 0;
+  padding: 15px 0;
 }
+
+.comment {
+  display: flex;
+  align-items: center;
+}
+
 label {
-    padding: 0 10px;
+  font-family: "indie flower", cursive;
+  background: rgb(146, 146, 182);
+}
+
+.noback {
+  background-color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+fieldset {
+  width: 40%;
+}
+
+#envoie {
+  text-align: center;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(91, 91, 138);
 }
