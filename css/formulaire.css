@@ -1,5 +1,18 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: block;
+}
+.align {
+  width: 100px;
+}
+
 div {
   padding: 15px 0;
+  display: flex;
 }
 
 .comment {
@@ -7,22 +20,17 @@ div {
   align-items: center;
 }
 
-label {
-  font-family: "indie flower", cursive;
-  background: rgb(146, 146, 182);
-}
-
-.noback {
-  background-color: white;
-  font-family: "Courier New", Courier, monospace;
-}
-
 #envoie {
   text-align: center;
 }
 
-button {
+.envoie {
   padding: 5px 10px;
   border-radius: 15px;
   background-color: rgb(91, 91, 138);
+}
+
+.envoie:hover {
+  background-color: white;
+  font-size: 45px;
 }

@@ -4,85 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formulaires HTML</title>
     <link rel="stylesheet" href="./css/formulaire.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./balises.html" target="_blank">balises</a></li>
+          <li><a href="./emmet.html">emmet</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section>
         <!--Je déclare mon formulaire avec la balise Form-->
-        <form action="" method="get">
+        <form action="index.html" method="get">
           <!-- Deux manières de déclarer le Label -->
           <!-- Pseudo -->
-          <label for="name">Pseudonyme :</label>
-          <!-- Input dans Label -->
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Entrez votre Pseudo"
-            required
-          /><br />
+          <div>
+            <label for="name" class="align">Pseudonyme :</label>
+            <!-- Input dans Label -->
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Entrez votre Pseudo"
+              required
+            /><br />
+          </div>
           <!-- L'id combiné à for permet de lier le label à l'input, Type précise le type de donnée récupérée,
           name sera utilisé en php pour récupérer la donnée,
-        le placeholder contient le text qui apparaît dans l'input -->
-          <label for="mdp"
-            >Mot de passe
-            <span title="le mot de passe peut contenir">*</span></label
-          >
-          <input
-            type="text"
-            name="password"
-            id="mdp"
-            placeholder="Tapez votre mot de passe"
-          /><br />
-          <label for="email" name="email" id="email">email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Entrez votre E-mail"
-          /><br />
-          <label for="photo" name="photo" id="photo"> Photo </label>
-          <input type="file" value="Choisir un fichier" />
+         le placeholder contient le text qui apparaît dans l'input -->
+          <div>
+            <label for="mdp" class="align"
+              >Mot de passe
+              <span title="le mot de passe peut contenir">*</span></label
+            >
+            <input
+              type="password"
+              name="password"
+              id="mdp"
+              placeholder="Tapez votre mot de passe"
+            /><br />
+          </div>
+          <div>
+            <label for="e-mail" class="align">email</label>
+            <input
+              type="email"
+              name="email"
+              id="e-mail"
+              placeholder="Entrez votre E-mail"
+            /><br />
+          </div>
+
+          <!-- Label for="" doit être relié à input id="" (même for que l'id) -->
+          <div>
+            <label class="align"> Photo </label>
+            <input type="file" name="photo" id="photo" />
+          </div>
+
+          <!-- Fieldset : Regroupe tous les champs d'un formulaire -->
+          <fieldset>
+            <legend>Choix Multiples</legend>
+            <div>
+              <label for="destination"
+                >Quelle déstination choisissez vous?</label
+              >
+              <input type="checkbox" name="Venise" id="Venise" />
+              <label>Venise</label>
+              <input type="checkbox" name="Paris" id="Paris" />
+              <label>Paris</label>
+              <input type="checkbox" name="Rio" id="Rio" />
+              <label for="Rio">Rio</label>
+            </div>
+            <div>
+              <label>Qui seront vos accompagnateurs</label>
+              <input type="radio" name="accompagnateurs" />
+              <label for="famille">En famille</label>
+              <input type="radio" name="accompagnateurs" />
+              <label for="amis">Entre amis</label>
+              <input type="radio" name="accompagnateurs" />
+              <label for="solo">solo</label>
+            </div>
+          </fieldset>
+          <div class="comment">
+            <label for="commentaire">commentaire</label>
+            <!-- Zone de texte : Rows = nombre de lignes - cols = nombre de colonnes/caractères -->
+            <textarea
+              name="commentaire"
+              id="commentaire"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <section id="envoie">
+            <div>
+              <!-- Buton envoi du formulaire (on peut utiliser <button type="submit"
+                name="inscription"> envoyer </button> ou <input type="submit"
+                name="inscription value="envoyer") -->
+              <input
+                class="envoie"
+                type="submit"
+                name="inscription"
+                value="envoyer"
+              />
+              <!-- Bouton pour vider le formulaire (comme bouton envoie <button></button> ou <input/>)-->
+              <input
+                class="envoie"
+                type="reset"
+                name="annuler"
+                value="annuler"
+              />
+            </div>
+          </section>
         </form>
-        <fieldset>
-          <legend>Choix Multiples</legend>
-          <div>
-            <label for="destination">Quelle déstination choisissez vous?</label>
-            <input type="checkbox" name="Venise" id="Venise" />
-            <label for="Venise" class="noback">Venise</label>
-            <input type="checkbox" name="Paris" id="Paris" />
-            <label for="Paris" class="noback">Paris</label>
-            <input type="checkbox" name="Rio" id="Rio" />
-            <label for="Rio" class="noback">Rio</label>
-          </div>
-          <div>
-            <label for="accompagnateurs">Qui seront vos accompagnateurs</label>
-            <input type="radio" name="accompagnateurs" id="famille" />
-            <label for="famille" class="noback">En famille</label>
-            <input type="radio" name="accompagnateurs" id="amis" />
-            <label for="amis" class="noback">Entre amis</label>
-            <input type="radio" name="accompagnateurs" id="solo" />
-            <label for="solo" class="noback">solo</label>
-          </div>
-        </fieldset>
-        <div class="comment">
-          <label for="commentaire">commentaire</label>
-          <textarea
-            name="commentaire"
-            id="commentaire"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-      </section>
-      <section id="envoie">
-        <div>
-          <button type="button">Envoyer</button>
-          <button type="button">Annuler</button>
-        </div>
       </section>
     </main>
     <footer></footer>
