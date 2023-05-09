@@ -11,22 +11,33 @@
     <header></header>
     <main>
       <section>
+        <!--Je déclare mon formulaire avec la balise Form-->
         <form action="" method="get">
-          <label for="pseudo">Pseudonyme :</label>
+          <!-- Deux manières de déclarer le Label -->
+          <!-- Pseudo -->
+          <label for="name">Pseudonyme :</label>
+          <!-- Input dans Label -->
           <input
             type="text"
             name="name"
             id="name"
             placeholder="Entrez votre Pseudo"
+            required
           /><br />
-          <label for="password">Mot de passe*</label>
+          <!-- L'id combiné à for permet de lier le label à l'input, Type précise le type de donnée récupérée,
+          name sera utilisé en php pour récupérer la donnée,
+        le placeholder contient le text qui apparaît dans l'input -->
+          <label for="mdp"
+            >Mot de passe
+            <span title="le mot de passe peut contenir">*</span></label
+          >
           <input
             type="text"
             name="password"
-            id="password"
+            id="mdp"
             placeholder="Tapez votre mot de passe"
           /><br />
-          <label for="email" name="email" id="email">E-mail</label>
+          <label for="email" name="email" id="email">email</label>
           <input
             type="email"
             name="email"
@@ -39,31 +50,22 @@
         <fieldset>
           <legend>Choix Multiples</legend>
           <div>
-            <div>
-              <label for="pseudo">Pseudonyme :</label>
-              <input type="text" name="name" id="name" /><br />
-            </div>
-            <div>
-              <label for="password">Mot de passe*</label>
-              <input type="text" name="password" id="password" /><br />
-            </div>
-            <div>
-              <label for="email" name="email" id="email">E-mail</label>
-              <input type="email" name="email" id="email" /><br />
-            </div>
-            <div>
-              <label for="photo" name="photo" id="photo"> Photo </label>
-              <input type="file" value="Choisir un fichier" />
-            </div>
+            <label for="destination">Quelle déstination choisissez vous?</label>
+            <input type="checkbox" name="Venise" id="Venise" />
+            <label for="Venise" class="noback">Venise</label>
+            <input type="checkbox" name="Paris" id="Paris" />
+            <label for="Paris" class="noback">Paris</label>
+            <input type="checkbox" name="Rio" id="Rio" />
+            <label for="Rio" class="noback">Rio</label>
           </div>
           <div>
             <label for="accompagnateurs">Qui seront vos accompagnateurs</label>
-            <input type="radio" name="accompagnants" id="accompagnants" />
-            <label for="accompagnants" class="noback">En famille</label>
-            <input type="radio" name="accompagnants" id="accompagnants" />
-            <label for="accompagnants" class="noback">Entre amis</label>
-            <input type="radio" name="accompagnants" id="accompagnants" />
-            <label for="accompagnants" class="noback">Solo</label>
+            <input type="radio" name="accompagnateurs" id="famille" />
+            <label for="famille" class="noback">En famille</label>
+            <input type="radio" name="accompagnateurs" id="amis" />
+            <label for="amis" class="noback">Entre amis</label>
+            <input type="radio" name="accompagnateurs" id="solo" />
+            <label for="solo" class="noback">solo</label>
           </div>
         </fieldset>
         <div class="comment">

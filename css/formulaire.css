@@ -17,10 +17,6 @@ label {
   font-family: "Courier New", Courier, monospace;
 }
 
-fieldset {
-  width: 40%;
-}
-
 #envoie {
   text-align: center;
 }
