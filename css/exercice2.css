@@ -1,0 +1,40 @@
+tbody {
+  padding: 200px;
+}
+
+tr,
+td {
+  border: 1px solid black;
+}
+
+td {
+  width: 50px;
+  height: 40px;
+  border: 1px solid darkgray;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.white {
+  background: white;
+}
+.marron {
+  background: rgb(83, 72, 72);
+}
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}
+.noir {
+  background: black;
+}
+.beige {
+  background: lightpink;
+}
+.marronClair{
+    background:rgba(148, 109, 109, 0.774);
+}
