@@ -1,0 +1,11 @@
+/* Block = prend toute la largeur de l'écran 
+   Inline = prend la largeur du contenu mais ne prend PAS en compte les width et height ( mettre inline-block pour prendre en compte les tailles ) 
+   Float = ajouter float permet de mettre cote à cote des éléments block ou inline */
+.degradee {
+  display: inline-block;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: rgb(18, 185, 209);
+  background: linear-gradient(to right, rgb(109, 21, 21), rgb(107, 107, 214));
+}
