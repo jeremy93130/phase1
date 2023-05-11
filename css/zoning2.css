@@ -1,0 +1,56 @@
+body {
+  color: white;
+}
+
+#conteneur {
+  width: 80%;
+  /* background-color: #8e3457; */
+  border: 1px solid black;
+  margin: auto;
+}
+header {
+  background: #8e3457;
+  height: 60px;
+}
+p {
+  margin: 0;
+}
+
+nav {
+  background: #4a1a2c;
+}
+
+main {
+  margin: 5px;
+}
+
+section {
+  background: orange;
+  height: 200px;
+}
+
+div.dim {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+.bordeau {
+  background-color: #4a1a2c;
+}
+
+.vertClair {
+  background-color: #e6e2af;
+}
+
+.vertFonce {
+  background-color: #787746;
+}
+
+.bleu {
+  background-color: #add8e6;
+}
+
+.clear {
+    clear: both;
+}
