@@ -1,0 +1,50 @@
+/* Margin auto ne fonctionne que sur un format plus petit que son contenant */
+
+body {
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+  border: 2px solid black;
+}
+header div {
+  background: #8e3557;
+  height: 120px;
+}
+
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 20px 0;
+  color: white;
+}
+
+nav {
+  background: #461528;
+  height: 70px;
+  padding-left: 30px;
+}
+main {
+  border: 20px solid #787746;
+}
+
+.yellow {
+  background: #e6e2af;
+  height: 600px;
+}
+.yellow p {
+  color: black;
+}
+.center {
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+footer {
+  background: #8e3557;
+  height: 100px;
+}
